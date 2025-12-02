@@ -80,8 +80,8 @@ z_position = cumtrapz(time, throttle); % Integrate throttle to get z-position
 subplot(2, 3, 1);
 plot(time, z_position, 'b', 'LineWidth', 2); hold on;
 yline(1, 'r--', 'LineWidth', 1.5);
-yline(1, 'b--', 'LineWidth', 1.5);
+% yline(1, 'b--', 'LineWidth', 1.5);
 title('Altitude (z-position)');
 xlabel('Time (s)'); ylabel('Position (m)');
-legend('Actual Altitude', 'Desired Altitude', 'Desired Altitude 2');
+legend('Actual Altitude', 'Desired Altitude');
 grid on;
